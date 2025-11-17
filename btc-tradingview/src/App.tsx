@@ -4,7 +4,7 @@ import DarkModeToggle from "./components/DarkModeToggle";
 import BitcoinChart from "./components/BitcoinChart";
 import CryptoSlider from './components/CryptoSlider';
 import CryptoNewsFeed from './components/Feed';
-
+import CryptoTicker from "./components/CryptoTicker";
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
 
     
     <div className={`app-root ${darkMode ? "dark" : ""}`}>
+
       <header className="topbar">
         <div className="brand">Bitcoin TradingView</div>
         <div className="darkmode-wrapper">
@@ -23,8 +24,13 @@ function App() {
           <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
        
-      
+        
       </header>
+      <div className="cryptotricker">
+        <CryptoTicker />
+      </div>
+       
+ 
       
 
               <aside className="sidepanel">

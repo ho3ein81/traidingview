@@ -1,0 +1,65 @@
+.crypto-ticker {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 0;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
+  .ticker-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 1rem;
+    white-space: nowrap;
+
+    /* حذف اسکرول بار */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #f7f7f8;
+    padding: 8px 14px;
+    border-radius: 12px;
+    min-width: 160px;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+      background: #eef0f5;
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    .symbol {
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .price {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .change {
+      font-size: 0.85rem;
+      font-weight: 600;
+
+      &.up {
+        color: #16c784; // سبز
+      }
+      &.down {
+        color: #ea3943; // قرمز
+      }
+    }
+  }
+}
