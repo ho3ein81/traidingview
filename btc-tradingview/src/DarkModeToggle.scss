@@ -1,0 +1,26 @@
+.dark-mode-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  &.light {
+    background-color: #ddd;
+    color: #000;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  &.dark {
+    background-color: #444;
+    color: #fff;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+}

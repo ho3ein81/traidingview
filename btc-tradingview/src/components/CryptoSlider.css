@@ -1,0 +1,64 @@
+.crypto-slider {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.crypto-slider h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #6366f1;
+}
+
+.slider-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.crypto-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  min-width: 120px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.crypto-item:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.crypto-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.crypto-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.crypto-price {
+  font-weight: 500;
+  color: #555;
+}
+
+
+@media (max-width: 600px) {
+  .crypto-item { min-width: 100px; padding: 0.75rem; }
+  .crypto-icon { font-size: 1.5rem; }
+}
+
+

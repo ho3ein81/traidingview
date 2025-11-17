@@ -1,0 +1,67 @@
+:root {
+  font-family: "Inter", sans-serif;
+  background: #f5f6fa;
+  color: #222;
+}
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topbar {
+  height: 56px;
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  padding: 5px;
+}
+
+.chart-area {
+  text-align: center;
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 14px rgba(12, 12, 18, 0.08);
+}
+
+.sidepanel {
+  width: 280px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(12, 12, 18, 0.08);
+}
+
+.footer {
+  height: 40px;
+  width: 60rem;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+  background: #eef1f5;
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidepanel {
+    width: auto;
+  }
+}
+
