@@ -41,7 +41,7 @@ function App() {
           <ul>
             <li>Source: Binance</li>
             <li>Timeframe: {interval}</li>
-            <li>Status: Connected</li>
+            <li>Status:<p className="connected">Connected</p></li>
           </ul>
           </div>
         </aside>
@@ -56,13 +56,14 @@ function App() {
       <div className=" slider">
         <CryptoSlider/>
        </div>
-
-      <footer className="footer">
-        
-        
-      </footer>
+      <br />
+      
       <CryptoNewsFeed />
+
+     
     </div>
+
+
   );
 }
 
